@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full bg-white">
   <head>
     <title>CodespacesTryRails</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,8 +12,8 @@
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="h-full">
+    <main>
       <%= yield %>
     </main>
   </body>
