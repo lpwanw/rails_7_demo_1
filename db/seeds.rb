@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# init admin
+admin = Admin.find_or_initialize_by(email: ENV.fetch("ADMIN_EMAIL") { nil })
+admin.password = ENV.fetch("ADMIN_PASSWORD") { nil } if admin.new_record?
+admin.save!
