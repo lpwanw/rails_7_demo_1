@@ -13,8 +13,11 @@
   </head>
 
   <body class="h-full">
-    <main>
-      <%= yield %>
-    </main>
+    <div>
+      <%= render Admin::SidebarComponent.new %>
+      <main class="ml-16">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>
