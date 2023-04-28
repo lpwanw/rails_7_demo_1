@@ -18,6 +18,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "tailwindcss-rails", "~> 2.0"
 gem "font-awesome-sass", "~> 6.4.0"
+gem "redis"
 
 
 group :development, :test do
